@@ -160,8 +160,8 @@ section.container { @apply mx-auto px-4; }
 .user-status .main .username { @apply sm:text-xl font-semibold; }
 .user-status .main .exp { @apply text-text-500 font-semibold; }
 .user-status .stats { @apply flex items-center gap-8 w-full justify-between sm:w-max sm:justify-start; }
-.user-status .tag { @apply flex items-center gap-2; }
-.user-status .tag img { @apply w-8 h-8 aspect-square bg-background-800 rounded-md; }
+.user-status .tag { @apply flex items-center gap-1; }
+.user-status .tag img { @apply w-8 h-8 aspect-square; }
 .user-status .tag p { @apply font-semibold text-text-500; }
 
 .subject-card { @apply flex flex-col flex-grow justify-end w-full aspect-[3/2] sm:aspect-[3/4] bg-primary-500 bg-center rounded-md; }
