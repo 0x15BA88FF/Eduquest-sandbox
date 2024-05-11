@@ -1,5 +1,5 @@
 <div class="question-counter">
-    <p><%= questionStatus.length %>/<%= questionStatus[0] %></p>
+    <p><%= questionStatus.filter(x => x === "solved" || x === "wrong").length %>/<%= questionStatus.length %></p>
     <div class="counter-bars">
         <% questionStatus.forEach((status) => { %>
             <div class="<%= status %>"></div>

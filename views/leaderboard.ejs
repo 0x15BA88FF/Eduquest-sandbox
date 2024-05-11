@@ -21,7 +21,8 @@
 
         <div class="rank-section">
             <% users.slice(3).forEach((user, i) => { %>
-                <%- include('./components/userRankCard', { avatar: user.avatar, username: user.username, exp: user.exp, position: i }) %>
+                <%= console.log(i) %>
+                <%- include('./components/userRankCard', { avatar: user.avatar, username: user.username, exp: user.exp, position: i + 4 }) %>
             <% }); %>
         </div>
     </section>

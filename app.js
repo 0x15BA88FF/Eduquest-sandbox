@@ -5,7 +5,7 @@ const fs = require('fs');
 
 const app = express();
 
-mongoose.connect("mongodb://localhost:27017/EDUQUESTUSERS")
+mongoose.connect("mongodb://localhost:27017/EDUQUESTCLUSERS")
 .then(() => console.log('MongoDB connected successfully'))
 .catch(err => console.error('MongoDB connection error:', err))
 
@@ -33,19 +33,20 @@ fs.readdirSync(routesDirectory).forEach(file => {
     }
 });
 
-app.get('/error', (req, res, next) => {
-    throw new Error('This is a simulated error!');
-});
+app.use(function(req, res, next) {
+    var err = new Error('Resourse Not Found');
+    err.statusCode = 404;
+    err.statusMessage = "Page Not Found";
 
-app.use((req, res, next) => {
-    const { statusCode } = res.status(404);
-    return next({ statusCode, statusMessage: "Page Not Found" });
+    next(err);
 });
+  
+app.use(function(err, req, res, next) {
+    let response = res.status(err.statusCode || 500);
+    response.statusMessage = err.statusMessage || "Internal Server Error"
 
-app.use((err, req, res, next) => {
-    let { statusCode, statusMessage } = err;
-    res.status(statusCode || 500).render("error", { statusCode, statusMessage })
-})
+    res.render('error', { statusCode: response.statusCode, statusMessage: response.statusMessage });
+});
 
 const port = 3000 || process.env.PORT;
 

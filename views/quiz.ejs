@@ -5,7 +5,7 @@
     <%- include('./components/head') %>
 </head>
 
-<body class="dark">
+<body>
     <section class="container p-4 h-full sm:w-[600px] flex flex-col justify-between">
         <div>
             <%- include('./components/timer', { time: 10, percentage: 50 }) %>
@@ -13,7 +13,7 @@
         </div>
 
         <div class="question-section">
-            <img src="<%= questionImage %>" alt="question image"/>
+            <img src="/questions/<%= questionImage %>" alt="question image" class="<%= !questionImage? 'hidden' : '' %>"/>
             <p><%= question %></p>
         </div>
 
