@@ -11,12 +11,12 @@
 
     <section class="container">
         <h1 class="mb-4 text-3xl font-bold text-center">Leaderboard</h1>
-        <%- include('./components/rank', { rankBadge: "/badges/badge_5.svg", rankName: "Sharks Legue" }) %>
+        <%- include('./components/rank', { rankBadge: "badge_5.svg", rankName: "Sharks Legue" }) %>
 
         <div class="top3-section">
-            <%- include('./components/top3Card', { positionClass: "second", avatar: users[1], username: users[1].username, exp: users[1].exp }) %>
-            <%- include('./components/top3Card', { positionClass: "first", avatar: users[0], username: users[0].username, exp: users[0].exp }) %>
-            <%- include('./components/top3Card', { positionClass: "third", avatar: users[2], username: users[2].username, exp: users[2].exp }) %>
+            <%- include('./components/top3Card', { positionClass: "second", avatar: users[1].avatar, username: users[1].username, exp: users[1].exp }) %>
+            <%- include('./components/top3Card', { positionClass: "first", avatar: users[0].avatar, username: users[0].username, exp: users[0].exp }) %>
+            <%- include('./components/top3Card', { positionClass: "third", avatar: users[2].avatar, username: users[2].username, exp: users[2].exp }) %>
         </div>
 
         <div class="rank-section">

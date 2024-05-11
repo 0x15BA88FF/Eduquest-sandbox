@@ -12,14 +12,14 @@ const userSchema = mongoose.Schema({
     avatar: {
         type: String,
         required: true,
-        default: "default"
+        default: "default.png"
     },
     date: {
         type: Date,
         required: true,
         default: Date.now
     },
-    legue: {
+    league: {
         type: Number,
         default: 0
     },
@@ -46,7 +46,6 @@ const userSchema = mongoose.Schema({
     solvedQuestions: {
         type: Array,
     }
-
 });
 
 module.exports = mongoose.model("User", userSchema);
