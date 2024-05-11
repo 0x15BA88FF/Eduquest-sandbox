@@ -1,0 +1,23 @@
+{
+    "name": "eduquest",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "npx nodemon app.js",
+        "style": "npx tailwindcss -i ./public/stylesheets/style.css -o ./public/stylesheets/output.css --watch",
+        "run": "node app.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "tailwindcss": "^3.4.3"
+    },
+    "dependencies": {
+        "autoprefixer": "^10.4.19",
+        "mongoose": "^8.3.4",
+        "postcss": "^8.4.38",
+        "postcss-cli": "^11.0.0"
+    }
+}
