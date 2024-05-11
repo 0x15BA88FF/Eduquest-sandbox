@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+
+<head>
+    <%- include('./components/head') %>
+</head>
+
+<body class="pt-20">
+    <%- include('./components/navbar', { activeLink: "/" }) %>
+    <%- include('./components/bottomNav', { activeLink: "/" }) %>
+
+    <section class="container">
+        <%- include('./components/userStats', { username: username, avatar: avatar, exp: exp, streak: streak, gems: gems, life: life, }) %>
+
+        <div class="courses">
+            <% subjects.forEach((subject) => { %>
+                <%- include('./components/subjectCard', { name: subject.name, image: subject.image }) %>
+            <% }); %>
+        </div>
+    </section>
+</body>
+
+</html>
