@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+
+<head>
+    <%- include('./components/head') %>
+</head>
+
+<body class="pt-20">
+    <%- include('./components/navbar', { activeLink: "/" }) %>
+    <%- include('./components/bottomNav', { activeLink: "/" }) %>
+
+    <section class="container">
+        <h1>ERROR: <%= statusCode %></h1>
+        <p><%= statusMessage %></p>
+    </section>
+</body>
+
+</html>
