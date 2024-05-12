@@ -7,6 +7,10 @@
 
 <body">
     <section class="container flex flex-col items-center justify-center sm:w-[600px]">
+        <div>
+            <%- include('./components/controlNav', { pageName: route }) %>
+        </div>
+
         <div class="interactive-section">
             <img src="<%= questionImage %>" alt="question image"/>
             <p><%= question %></p>

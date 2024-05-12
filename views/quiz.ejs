@@ -8,6 +8,7 @@
 <body>
     <section class="container p-4 flex flex-col justify-between sm:w-[600px]">
         <div>
+            <%- include('./components/controlNav', { pageName: route }) %>
             <%- include('./components/timer', { time: 10, percentage: 50 }) %>
             <%- include('./components/counter', { questionStatus: [ "solved", "wrong", "solved", "wrong", "wrong", "unsolved", "unsolved", "unsolved", "unsolved" ] }) %>
         </div>
