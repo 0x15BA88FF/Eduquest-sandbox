@@ -10,17 +10,16 @@
 
 @layer base {
     :root {
-        --text-50: 210 15% 5%;
-        --text-100: 200 18% 10%;
-        --text-200: 203 18% 20%;
-        --text-300: 202 18% 30%;
-        --text-400: 203 17% 40%;
-        --text-500: 202 17% 50%;
-        --text-600: 203 17% 60%;
-        --text-700: 202 18% 70%;
-        --text-800: 203 18% 80%;
-        --text-900: 200 18% 90%;
-        --text-950: 195 15% 95%;
+        --text-50: 200 18% 90%;
+        --text-100: 203 18% 80%;
+        --text-200: 202 18% 70%;
+        --text-300: 203 17% 60%;
+        --text-400: 202 17% 50%;
+        --text-500: 203 17% 40%;
+        --text-600: 202 18% 30%;
+        --text-700: 203 18% 20%;
+        --text-800: 200 18% 10%;
+        --text-900: 210 15% 5%;
 
         --background-50: 204 20% 5%;
         --background-100: 202 22% 10%;
@@ -32,7 +31,6 @@
         --background-700: 203 20% 70%;
         --background-800: 204 20% 80%;
         --background-900: 202 22% 90%;
-        --background-950: 204 20% 95%;
 
         --primary-50: 199 76% 5%;
         --primary-100: 200 76% 10%;
@@ -44,7 +42,6 @@
         --primary-700: 200 75% 70%;
         --primary-800: 200 75% 80%;
         --primary-900: 200 76% 90%;
-        --primary-950: 202 76% 95%;
 
         --secondary-50: 202 76% 5%;
         --secondary-100: 203 76% 10%;
@@ -56,7 +53,6 @@
         --secondary-700: 203 75% 70%;
         --secondary-800: 203 75% 80%;
         --secondary-900: 203 76% 90%;
-        --secondary-950: 205 76% 95%;
 
         --accent-50: 203 92% 5%;
         --accent-100: 203 92% 10%;
@@ -68,20 +64,18 @@
         --accent-700: 203 92% 70%;
         --accent-800: 203 92% 80%;
         --accent-900: 203 92% 90%;
-        --accent-950: 203 92% 95%;
     }
     .dark {
-        --text-50: 195 15% 95%;
-        --text-100: 200 18% 90%;
-        --text-200: 203 18% 80%;
-        --text-300: 202 18% 70%;
-        --text-400: 203 17% 60%;
-        --text-500: 202 17% 50%;
-        --text-600: 203 17% 40%;
-        --text-700: 202 18% 30%;
-        --text-800: 203 18% 20%;
-        --text-900: 200 18% 10%;
-        --text-950: 210 15% 5%;
+        --text-50: 200 18% 10%;
+        --text-100: 203 18% 20%;
+        --text-200: 202 18% 30%;
+        --text-300: 203 17% 40%;
+        --text-400: 202 17% 50%;
+        --text-500: 203 17% 60%;
+        --text-600: 202 18% 70%;
+        --text-700: 203 18% 80%;
+        --text-800: 200 18% 90%;
+        --text-900: 195 15% 95%;
 
         --background-50: 204 20% 95%;
         --background-100: 202 22% 90%;
@@ -93,104 +87,111 @@
         --background-700: 203 20% 30%;
         --background-800: 204 20% 20%;
         --background-900: 202 22% 10%;
-        --background-950: 204 20% 5%;
 
-        --primary-50: 202 76% 95%;
-        --primary-100: 200 76% 90%;
-        --primary-200: 200 75% 80%;
-        --primary-300: 200 75% 70%;
-        --primary-400: 200 75% 60%;
-        --primary-500: 200 75% 50%;
-        --primary-600: 200 75% 40%;
-        --primary-700: 200 75% 30%;
-        --primary-800: 200 75% 20%;
-        --primary-900: 200 76% 10%;
-        --primary-950: 199 76% 5%;
+        --primary-50: 200 76% 10%;
+        --primary-100: 200 75% 20%;
+        --primary-200: 200 75% 30%;
+        --primary-300: 200 75% 40%;
+        --primary-400: 200 75% 50%;
+        --primary-500: 200 75% 60%;
+        --primary-600: 200 75% 70%;
+        --primary-700: 200 75% 80%;
+        --primary-800: 200 76% 90%;
+        --primary-900: 202 76% 95%;
+        
+        --secondary-50: 203 76% 10%;
+        --secondary-100: 203 75% 20%;
+        --secondary-200: 203 75% 30%;
+        --secondary-300: 203 75% 40%;
+        --secondary-400: 203 75% 50%;
+        --secondary-500: 203 75% 60%;
+        --secondary-600: 203 75% 70%;
+        --secondary-700: 203 75% 80%;
+        --secondary-800: 203 76% 90%;
+        --secondary-900: 205 76% 95%;
 
-        --secondary-50: 205 76% 95%;
-        --secondary-100: 203 76% 90%;
-        --secondary-200: 203 75% 80%;
-        --secondary-300: 203 75% 70%;
-        --secondary-400: 203 75% 60%;
-        --secondary-500: 203 75% 50%;
-        --secondary-600: 203 75% 40%;
-        --secondary-700: 203 75% 30%;
-        --secondary-800: 203 75% 20%;
-        --secondary-900: 203 76% 10%;
-        --secondary-950: 202 76% 5%;
-
-        --accent-50: 203 92% 95%;
-        --accent-100: 203 92% 90%;
-        --accent-200: 203 92% 80%;
-        --accent-300: 203 92% 70%;
-        --accent-400: 203 92% 60%;
-        --accent-500: 203 92% 50%;
-        --accent-600: 203 92% 40%;
-        --accent-700: 203 92% 30%;
-        --accent-800: 203 92% 20%;
-        --accent-900: 203 92% 10%;
-        --accent-950: 203 92% 5%;
+        --accent-50: 203 92% 10%;
+        --accent-100: 203 92% 20%;
+        --accent-200: 203 92% 30%;
+        --accent-300: 203 92% 40%;
+        --accent-400: 203 92% 50%;
+        --accent-500: 203 92% 60%;
+        --accent-600: 203 92% 70%;
+        --accent-700: 203 92% 80%;
+        --accent-800: 203 92% 90%;
+        --accent-900: 203 92% 95%;
     }
 }
 
-body { @apply w-screen h-screen text-text-50 bg-background-900; }
-a { @apply hover:text-accent-500; }
-
+body { @apply w-screen h-screen text-text-900 bg-background-900; }
+h1 { @apply text-3xl font-bold }
+h2 { @apply text-2xl font-bold }
+a { @apply cursor-pointer; }
+button { @apply button; }
 input { @apply py-2 px-4 border-2 bg-background-800 border-background-700 rounded-md; }
-input[type="submit"] { @apply w-full p-2 bg-background-800 rounded-md border-2 border-background-700 hover:bg-background-700 hover:border-background-600; }
-button { @apply w-max p-2 bg-background-800 rounded-md border-2 border-background-700 hover:bg-background-700 hover:border-background-600; }
+input[type="submit"] { @apply button w-full bg-background-800 border-background-700 hover:bg-background-700 hover:border-background-600; }
 
-.answer-button { @apply w-full sm:flex-1 text-left p-2 text-text-50 bg-background-800 rounded-md border-2 border-background-700 hover:bg-background-700 hover:border-background-600; }
-.answer-button.wrong { @apply w-full sm:flex-1 text-left p-2 text-text-50 bg-red-200 rounded-md border-2 border-red-300 hover:bg-red-300 hover:border-red-400; }
-.answer-button.correct { @apply w-full sm:flex-1 text-left p-2 text-text-50 bg-green-200 rounded-md border-2 border-green-300 hover:bg-green-300 hover:border-green-400; }
+section.container { @apply h-full }
 
-section.container { @apply mx-auto px-4; }
+.button { @apply p-2 text-text-900 text-center border-2 rounded-md; }
+.link { @apply hover:text-accent-500; }
+
+.button.default { @apply bg-background-800 border-background-700 hover:bg-background-700 hover:border-background-600; }
+.button.primary { @apply bg-primary-200 border-primary-300 hover:bg-primary-300 hover:border-primary-400; }
+.button.secondary { @apply bg-secondary-200 border-secondary-300 hover:bg-secondary-300 hover:border-secondary-400; }
+.button.good { @apply bg-red-200 border-red-300 hover:bg-red-300 hover:border-red-400 }
+.button.bad { @apply bg-green-200 border-green-300 hover:bg-green-300 hover:border-green-400; }
+
+.answer-button { @apply button w-full text-left sm:flex-1; }
+.answer-button.wrong { @apply button bad; }
+.answer-button.correct { @apply button good; }
+
 .container { @apply mx-auto px-4; }
 
-.navbar { @apply fixed z-50 top-0 hidden sm:block w-full p-4 bg-background-900 border-background-800 border-b-2; }
-.navbar-container { @apply  w-full flex items-center justify-between container; }
+.navbar { @apply fixed z-50 top-0 hidden w-full p-4 bg-background-900 border-b-2 border-background-800 sm:block; }
+.navbar-container { @apply container flex w-full items-center justify-between; }
 .nav-logo { @apply text-2xl font-bold; }
 .nav-links { @apply flex gap-4; }
 
-.bottom-nav { @apply sm:hidden w-full p-4 fixed bottom-0 z-50; }
-.bottom-nav-container { @apply bg-background-800 w-full xs:w-max mx-auto p-4 flex justify-between xs:gap-8 rounded-md; }
+.bottom-nav { @apply fixed z-50 bottom-0 w-full p-4 sm:hidden; }
+.bottom-nav-container { @apply flex w-full mx-auto p-4 bg-background-800 justify-between rounded-md xs:w-max xs:gap-8; }
 
-.user-status { @apply w-full flex flex-col items-center justify-between sm:flex-row gap-8; }
+.user-status { @apply flex w-full flex-col items-center justify-between gap-8 sm:flex-row; }
 .user-status .avatar { @apply w-16 h-16 aspect-square bg-background-800 rounded-md; }
-.user-status .main .username { @apply sm:text-xl font-semibold; }
+.user-status .main .username { @apply font-semibold sm:text-xl; }
 .user-status .main .exp { @apply text-text-500 font-semibold; }
-.user-status .stats { @apply flex items-center gap-8 w-full justify-between sm:w-max sm:justify-start; }
+.user-status .stats { @apply flex w-full items-center justify-between gap-8 sm:w-max sm:justify-start; }
 .user-status .tag { @apply flex items-center gap-1; }
 .user-status .tag img { @apply w-8 h-8 aspect-square; }
 .user-status .tag p { @apply font-semibold text-text-500; }
 
-.subject-card { @apply flex flex-col flex-grow justify-end w-full aspect-[3/2] sm:aspect-[3/4] bg-primary-500 bg-center rounded-md; }
-.subject-card h2 { @apply text-2xl text-text-900 font-bold relative p-4; }
+.subject-card { @apply flex w-full flex-col flex-grow justify-end aspect-[3/2] bg-primary-500 bg-center rounded-md sm:aspect-[3/4]; }
+.subject-card h2 { @apply relative text-text-50 p-4; }
 
-.games-card { @apply flex flex-col flex-grow justify-end w-full aspect-[3/2] sm:aspect-[3/4] bg-primary-500 bg-center rounded-md; }
-.games-card h2 { @apply text-2xl text-text-900 font-bold relative p-4; }
+.games-card { @apply flex w-full flex-col flex-grow justify-end aspect-[3/2] bg-primary-500 bg-center rounded-md sm:aspect-[3/4]; }
+.games-card h2 { @apply relative text-text-50 p-4; }
 
 .rank { @apply flex flex-col items-center gap-1; }
 .rank img { @apply w-16 h-16; }
-.rank h2 { @apply sm:text-xl font-semibold text-center; }
+.rank h2 { @apply font-semibold text-center sm:text-xl; }
 
 .top3-card { @apply flex flex-col items-center gap-1; }
 .top3-card.first { @apply scale-110; }
 .top3-card.second { @apply scale-105; }
-.top3-card img { @apply w-16 h-16 aspect-square bg-background-800 rounded-full border-4 border-blue-500; }
+.top3-card img { @apply w-16 h-16 aspect-square bg-background-800 rounded-full border-4; }
 .top3-card.first img { @apply border-yellow-500; }
 .top3-card.second img { @apply border-blue-500; }
 .top3-card.third img { @apply border-red-500; }
-.top3-card .username { @apply sm:text-xl font-semibold text-center; }
-.top3-card .exp { @apply font-semibold text-xs sm:text-text-300; }
+.top3-card .username { @apply font-semibold text-center sm:text-xl; }
+.top3-card .exp { @apply text-xs font-semibold sm:text-text-500; }
 
-.user-rank-card { @apply w-[500px] flex items-center justify-between p-2 border-2 border-background-800 rounded-md; }
+.user-rank-card { @apply flex w-[500px] items-center justify-between p-2 border-2 border-background-800 rounded-md; }
 .user-rank-card .main { @apply flex items-center gap-4; }
-.user-rank-card img { @apply w-14 h-14 aspect-square bg-background-800 rounded-full border-2 border-background-800; }
+.user-rank-card img { @apply w-14 h-14 aspect-square bg-background-800 border-2 border-background-800 rounded-full; }
 .user-rank-card .username { @apply text-lg font-semibold; }
-.user-rank-card .exp { @apply font-semibold text-text-400; }
-.user-rank-card .position { @apply min-h-10 min-w-10 p-1 border-2 border-background-700 text-center rounded-full aspect-square; }
-.user-rank-card .position i { @apply font-semibold text-text-600; }
+.user-rank-card .exp { @apply text-text-500 font-semibold; }
+.user-rank-card .position { @apply min-h-10 min-w-10 aspect-square p-1 text-center border-2 border-background-800 rounded-full; }
+.user-rank-card .position span { @apply font-semibold text-text-500; }
 
 .question-counter { @apply flex items-center gap-4; }
 .question-counter p { @apply font-semibold; }
@@ -198,28 +199,27 @@ section.container { @apply mx-auto px-4; }
 .question-timer { @apply flex items-center gap-4; }
 .question-timer p { @apply font-semibold; }
 
-.progress-bar { @apply flex-grow h-3 rounded-full bg-accent-800; }
-.progress-fill { @apply h-full rounded-full bg-accent-500; }
+.progress-bar { @apply h-3 flex-grow rounded-full bg-accent-100; }
+.progress-fill { @apply h-full bg-accent-100 rounded-full; }
 
-.counter-bars { @apply flex-grow flex gap-2; }
-.counter-bars div { @apply w-full h-3 rounded-full bg-accent-800; }
-.counter-bars div.unsolved { @apply w-full h-3 rounded-full bg-accent-800; }
-.counter-bars div.wrong { @apply w-full h-3 rounded-full bg-red-500; }
-.counter-bars div.solved { @apply w-full h-3 rounded-full bg-accent-500; }
+.counter-bars { @apply flex flex-grow gap-2; }
+.counter-bars div { @apply w-full h-3 bg-accent-100 rounded-full; }
+.counter-bars div.unsolved { @apply w-full h-3 bg-accent-100 rounded-full; }
+.counter-bars div.wrong { @apply w-full h-3 bg-red-500 rounded-full; }
+.counter-bars div.solved { @apply w-full h-3 bg-accent-500 rounded-full; }
 
-.courses { @apply grid grid-cols-1 gap-4 mt-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4; }
-.games { @apply grid grid-cols-1 gap-4 mt-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4; }
+.courses + .games { @apply grid grid-cols-1 gap-4 mt-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4; }
 
 .question-section { @apply flex flex-col items-center gap-2; }
-.question-section img { @apply w-full aspect-[16/9] bg-background-800 rounded-md mt-4; }
-.question-section p { @apply w-full text-left text-lg; }
+.question-section img { @apply w-full aspect-[16/9] mt-4 bg-background-800 rounded-md; }
+.question-section p { @apply w-full text-lg text-left; }
 
 .interactive-section { @apply flex flex-col items-center gap-2; }
-.interactive-section img { @apply w-full aspect-[16/9] bg-background-800 rounded-md mt-4; }
+.interactive-section img { @apply w-full aspect-[16/9] mt-4 bg-background-800 rounded-md; }
 .interactive-section p { @apply w-full text-left text-lg; }
 
 .answer-section { @apply flex flex-col gap-2; }
-.answer-buttons { @apply flex flex-col sm:grid grid-cols-2 gap-2; }
+.answer-buttons { @apply flex flex-col gap-2 grid-cols-2 sm:grid; }
 
-.top3-section { @apply flex gap-6 sm:gap-10 justify-center mt-10; }
-.rank-section { @apply flex flex-col gap-4 items-center justify-center mt-10; }
+.top3-section { @apply flex mt-10 gap-6 justify-center sm:gap-10; }
+.rank-section { @apply flex mt-10 flex-col gap-4 items-center justify-center; }
