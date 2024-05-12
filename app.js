@@ -34,7 +34,7 @@ fs.readdirSync(routesDirectory).forEach(file => {
 });
 
 app.use(function(req, res, next) {
-    var err = new Error('Resourse Not Found');
+    let err = new Error('Resourse Not Found');
     err.statusCode = 404;
     err.statusMessage = "Page Not Found";
 
