@@ -2,14 +2,13 @@
     "name": "eduquest",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "main": "app.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "npx nodemon app.js",
         "style": "npx tailwindcss -i ./public/stylesheets/style.css -o ./public/stylesheets/output.css --watch",
         "run": "node app.js"
     },
-    "author": "",
+    "author": "cybotics",
     "license": "ISC",
     "devDependencies": {
         "tailwindcss": "^3.4.3"
