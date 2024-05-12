@@ -18,7 +18,6 @@ router.post("/", async (req, res)=>{
 
         if (userExists) {
             err = "username has bee taken"
-            console.log(err);
             return res.redirect('/signup', { errors: [ err ] });
         }
 
