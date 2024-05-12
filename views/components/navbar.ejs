@@ -1,0 +1,25 @@
+<nav class="navbar">
+    <div class="navbar-container">
+        <a href="/" class="nav-logo">EduQuest</a>
+        <div class="nav-links">
+            <a href="/" class="link <%= activeLink === '/'? 'active' : '' %>">Courses</a>
+            <a href="/games" class="link <%= activeLink === '/games'? 'active' : '' %>">Games</a>
+            <a href="/Leaderboard" class="link <%= activeLink === '/Leaderboard'? 'active' : '' %>">Leaderboard</a>
+            <a href="/login" class="link <%= activeLink === '/login'? 'active' : '' %>">Log in</a>
+
+            <a href="/profile" class="link <%= activeLink === '/profile'? 'active' : '' %>">Profile</a>
+        </div>
+    </div>
+</nav>
+
+<nav class="bottom-nav">
+    <div class="bottom-nav-container">
+        <a href="/" class="link <%= activeLink === '/'? 'active' : '' %>">Courses</a>
+        <a href="/games" class="link <%= activeLink === '/games'? 'active' : '' %>">Games</a>
+        <a href="/search" class="link <%= activeLink === '/search'? 'active' : '' %>">Search</a>
+        <a href="/Leaderboard" class="link <%= activeLink === '/Leaderboard'? 'active' : '' %>">Leaderboard</a>
+        <a href="/login" class="link <%= activeLink === '/login'? 'active' : '' %>">Log in</a>
+
+        <a href="/profile" class="link <%= activeLink === '/profile'? 'active' : '' %>">Profile</a>
+    </div>
+</nav>
