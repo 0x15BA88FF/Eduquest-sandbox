@@ -211,6 +211,22 @@ section.container { @apply h-full }
 .counter-bars div.wrong { @apply w-full h-3 bg-red-500 rounded-full; }
 .counter-bars div.solved { @apply w-full h-3 bg-accent-500 rounded-full; }
 
+.notification-model-container { @apply fixed z-40 top-0 flex w-full max-w-[300px] flex-col gap-2 }
+.notification-model { @apply flex items-center justify-between p-4 border-2 rounded-md shadow-md }
+.notification-model.info  { @apply bg-blue-200 border-blue-300 }
+.notification-model.warn { @apply bg-yellow-200 border-yellow-300 }
+.notification-model.error { @apply bg-red-200 border-red-300 }
+.notification-model .main { @flex items-center gap-4 }
+.notification-model img { @flex p-4 rounded-full }
+.notification-model p { @flex font-semibold }
+.notification-model.info p  { @apply text-blue-700 }
+.notification-model.warn p { @apply text-yellow-700 }
+.notification-model.error p { @apply text-red-700 }
+.notification-model button { @flex font-semibold }
+.notification-model.info button  { @apply text-blue-700 }
+.notification-model.warn button { @apply text-yellow-700 }
+.notification-model.error button { @apply text-red-700 }
+
 .courses + .games { @apply grid grid-cols-1 gap-4 mt-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4; }
 
 .question-section { @apply flex flex-col items-center gap-2; }

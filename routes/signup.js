@@ -6,8 +6,10 @@ let userModel = require("../models/usermodel");
 router.use(express.json());
 router.use(express.urlencoded({ extended: true }));
 
-router.get("/", (req, res)=>{
-    res.render('signup');
+router.get("/", (req, res) => {
+    res.render('signup', {
+        notification: []
+    });
 })
 
 router.post("/", async (req, res)=>{
@@ -17,8 +19,14 @@ router.post("/", async (req, res)=>{
         const userExists = await userModel.findOne({ username: Username });
 
         if (userExists) {
-            err = "username has bee taken"
-            return res.redirect('/signup', { errors: [ err ] });
+            let err = new Error('Username taken');
+            err.message = "username has bee taken"
+
+            return res.redirect('/signup', {
+                notification: [
+                    { level: "error", message: err.message }
+                ]
+            });
         }
 
         let user = new userModel({
@@ -31,8 +39,11 @@ router.post("/", async (req, res)=>{
         
         res.redirect("/");
     } catch(err) {
-        console.log(err.message);
-        res.render("signup", { errors: [ err.message ] })
+        res.render("signup", {
+            notification: [
+                { level: "error", message: err.message }
+            ]
+        })
     }
 });
 

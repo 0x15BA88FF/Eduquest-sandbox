@@ -1,0 +1,11 @@
+<div class="notification-model-container">
+    <% notifications.forEach((notification) => { %>
+        <div class="notification-model <%= level %>">
+            <div class="main">
+                <img src="/icons/<%= level %>.svg" alt="<%= level %>">
+                <p><%= message %></p>
+            </div>
+            <button class="icon">close</button>
+        </div>
+    <% }); %>
+</div>
