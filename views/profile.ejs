@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+
+<head>
+    <%- include('./components/head') %>
+</head>
+
+<body class="pt-20">
+    <%- include('./components/navbar', { activeLink: "/profile" }) %>
+
+    <section class="container">
+        <%- include('./components/userStats', { username: username, avatar: avatar, exp: exp, streak: streak, gems: gems, life: life, }) %>
+
+        <div class="courses">
+        </div>
+    </section>
+</body>
+
+</html>

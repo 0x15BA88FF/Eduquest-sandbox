@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+<head>
+    <%- include('./components/head') %>
+</head>
+
+<body>
+    <%- include('./components/navbar', { activeLink: "/login" }) %>
+
+    <div class="error-model-container">
+        <div class="error-model">
+            <img src="/icons/error.svg" alt="error">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+    
+    <section class="container flex items-center justify-center">
+        <form action="/signup" method="post" class="flex flex-col gap-2">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required placeholder="e.g. John Doe">
+            <label for="password">Password</label>
+            <input type="password" id="password" required name="password" placeholder="*************">
+            <input type="submit" value="Log in">
+        </form>
+    </section>
+</body>
+
+</html>

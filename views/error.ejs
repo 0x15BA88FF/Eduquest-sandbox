@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+
+<head>
+    <%- include('./components/head') %>
+</head>
+
+<body class="pt-20">
+    <%- include('./components/navbar', { activeLink: "/" }) %>
+
+    <section class="container flex flex-col gap-4 items-center justify-center">
+        <h1>ERROR: <%= statusCode %></h1>
+        <p><%= statusMessage %></p>
+    </section>
+</body>
+
+</html>

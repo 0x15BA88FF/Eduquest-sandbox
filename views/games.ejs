@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+
+<head>
+    <%- include('./components/head') %>
+</head>
+
+<body class="pt-20">
+    <%- include('./components/navbar', { activeLink: "/games" }) %>
+
+    <section class="container">
+        <%- include('./components/userStats') %>
+
+        <div class="games">
+            <% subjects.forEach((subject) => { %>
+                <%- include('./components/subjectCard', { name: subject.name, image: subject.image }) %>
+            <% }); %>
+        </div>
+    </section>
+</body>
+
+</html>

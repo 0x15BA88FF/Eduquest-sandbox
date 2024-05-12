@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+
+<head>
+    <%- include('./components/head') %>
+</head>
+
+<body>
+    <section class="container p-4 flex flex-col items-center justify-center sm:w-[600px]">
+        <div class="flex flex-col items-center gap-8">
+            <h1 class="text-text-300 text-center">Nice Job!</h1>
+            <div class="flex w-full py-10 flex-col items-center gap-2 bg-background-800 rounded-md sm:w-max sm:px-28">
+                <img src="/avatars/<%= avatar %>" alt="<%= username %>" class="w-20 h-20 aspect-square rounded-full">
+                <p class="username text-xl font-semibold text-center"><%= username %></p>
+                <p class="exp font-semibold text-text-600 text-center"><%= exp %> EXP</p>
+            </div>
+            <p class="text-xl text-text-700 text-center font-semibold">You Solved <%= solvedQuestions %>/<%= totalQuestions %> Questions</h1>
+            <div class="flex w-full flex-col items-center gap-2">
+                <a class="button primary">Next</a>
+                <a class="button secondary">Go Home</a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

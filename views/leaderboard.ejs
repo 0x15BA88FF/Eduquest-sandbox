@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+<head>
+    <%- include('./components/head') %>
+</head>
+
+<body class="pt-20">
+    <%- include('./components/navbar', { activeLink: "/leaderboard" }) %>
+
+    <section class="container">
+        <h1 class="mb-4 text-center">Leaderboard</h1>
+        <%- include('./components/rank', { rankBadge: "badge_5.svg", rankName: "Sharks Legue" }) %>
+
+        <div class="top3-section">
+            <%- include('./components/top3Card', { positionClass: "second", avatar: users[1].avatar, username: users[1].username, exp: users[1].exp }) %>
+            <%- include('./components/top3Card', { positionClass: "first", avatar: users[0].avatar, username: users[0].username, exp: users[0].exp }) %>
+            <%- include('./components/top3Card', { positionClass: "third", avatar: users[2].avatar, username: users[2].username, exp: users[2].exp }) %>
+        </div>
+
+        <div class="rank-section">
+            <% users.slice(3).forEach((user, i) => { %>
+                <%= console.log(i) %>
+                <%- include('./components/userRankCard', { avatar: user.avatar, username: user.username, exp: user.exp, position: i + 4 }) %>
+            <% }); %>
+        </div>
+    </section>
+
+</body>
+
+</html>
